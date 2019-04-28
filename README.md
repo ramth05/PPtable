@@ -6,12 +6,22 @@ Print the Prime numbers product table based on count ( how many numbers)
   
   PrimeProdTable.php : Used to run from CLI to print the table
   
-  test/PrimeNumberTest.php: Contains unit test for PrimeNumber class based on phpunit test framework.
+  ./test/PrimeNumberTest.php: Contains unit test for PrimeNumber class based on phpunit test framework.
   
 # Uses:
 
 From CLI just run:
 ```bash
-php PrimeProdTable.php --count 4 
+php PrimeProdTable.php --count <pass the count for prime numbers> 
 ```
+# How to run test file:
+ Reuirement: [phpunit](https://phpunit.de/) must be installed.
+ Go to test folder and run
+ ```bash
+ phpunit .
+ 
+ or 
+ 
+ phpunit PrimeNumberTest.php
+ ```
 
