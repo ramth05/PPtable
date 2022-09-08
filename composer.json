@@ -17,5 +17,6 @@
       "role": "Developer"
     }
   ],
-  "type": "ram-module"
+  "type": "ram-module",
+  "license": ["MIT"]
 }
