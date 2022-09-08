@@ -13,6 +13,8 @@ if (defined('STDIN')) {
 }
 
 
+
+
 $objPrime = new PrimeNumber();
 $primeArr = $objPrime->getPrime($count);
 
