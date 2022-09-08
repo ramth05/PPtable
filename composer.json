@@ -1,21 +1,19 @@
-
 {
-    "name": "ram/pptable",
-    "description": "ram pp table.",
-    "version": "1.0.0",
-    "require": {
-        "php": "~5.5.0|~5.6.0|7.*|^8.0",
-    },
-    "keywords": [
-        "ram",
-        "pptable",
-    ],
-    "authors": [
-        {
-            "name": "Team Ram",
-            "role": "Developer"
-        }
-    ],
-    "type": "ram-module",
-    "license": ["MIT"],
+  "name": "ram/pptable",
+  "description": "ram pp table.",
+  "version": "1.0.0",
+  "require": {
+    "php": "~5.5.0|~5.6.0|7.*|^8.0"
+  },
+  "keywords": [
+    "ram",
+    "pptable"
+  ],
+  "authors": [
+    {
+      "name": "Team Ram",
+      "role": "Developer"
+    }
+  ],
+  "type": "ram-module"
 }
