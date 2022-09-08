@@ -1,5 +1,5 @@
 {
-    "name": "pptable",
+    "name": "ram/pptable",
     "description": "Laravel 4 and 5 integration for pp table.",
     "keywords": ["slack", "laravel"],
     "license": "BSD-2-Clause",
