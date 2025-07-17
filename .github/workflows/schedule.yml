@@ -1,0 +1,39 @@
+# This workflow is named "Scheduled Job" and will run on a schedule.
+name: Scheduled Job
+
+# Define when this workflow should run.
+on:
+  # The 'schedule' event allows you to run workflows at specified times.
+  # We use a cron expression to define the schedule.
+  # This cron expression '*/10 * * * *' means:
+  # - '*/10': Every 10 minutes
+  # - '*': Every hour
+  # - '*': Every day of the month
+  # - '*': Every month
+  # - '*': Every day of the week
+  # So, it will run every 10 minutes, on the hour, every day.
+  schedule:
+    - cron: '*/5 * * * *'
+
+# Define the jobs that will run as part of this workflow.
+jobs:
+  # This is a single job named 'run-scheduled-task'.
+  run-scheduled-task:
+    # Specify the runner environment for this job. 'ubuntu-latest' is a common choice.
+    runs-on: ubuntu-latest
+
+    # Define the steps that this job will execute.
+    steps:
+      # Step 1: Check out the repository code.
+      # To specify a target branch, you can use the 'ref' input for the checkout action.
+      # Replace 'your-target-branch' with the actual branch name you want to target.
+
+      # Step 2: Run a simple script.
+      # This step will simply print a message to the console.
+      - name: Execute scheduled task
+        run: |
+          echo "This job runs every 10 minutes!"
+          echo "Current time: $(date)"
+          echo "Checked out branch: your-target-branch" # Update this line to reflect the checked out branch
+          # You can add any commands or scripts here that you want to run on schedule.
+          # For example, you might run a build script, a test suite, or a data processing script.
